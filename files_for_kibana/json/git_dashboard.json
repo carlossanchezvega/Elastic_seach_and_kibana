@@ -1,0 +1,18 @@
+[
+  {
+    "_id": "87b74a70-5549-11e8-92e0-a7c9696733c7",
+    "_type": "dashboard",
+    "_source": {
+      "title": "dashboard_git",
+      "hits": 0,
+      "description": "",
+      "panelsJSON": "[{\"gridData\":{\"h\":3,\"i\":\"1\",\"w\":6,\"x\":0,\"y\":0},\"id\":\"e7a901f0-55d8-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"1\",\"title\":\"Total number of commits\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"3\",\"w\":6,\"x\":6,\"y\":12},\"id\":\"2834a9f0-55e2-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"3\",\"title\":\"Top committers per modification\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"5\",\"w\":6,\"x\":6,\"y\":15},\"id\":\"0c338830-55dc-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"5\",\"title\":\"Top authors throughout history\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"6\",\"w\":6,\"x\":0,\"y\":12},\"id\":\"a4f76120-55d9-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"6\",\"title\":\"Top committers by organization throughout history\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"8\",\"w\":6,\"x\":0,\"y\":15},\"id\":\"a3862990-56b8-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"8\",\"title\":\"Top author organizations throughout history\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"9\",\"w\":6,\"x\":6,\"y\":6},\"id\":\"d1f859e0-56ba-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"9\",\"title\":\"Auhor organization and author\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"10\",\"w\":6,\"x\":6,\"y\":3},\"id\":\"bf77d630-5767-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"10\",\"title\":\"Committer per author\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":3,\"direction\":\"desc\"}}}},\"gridData\":{\"h\":3,\"i\":\"11\",\"w\":6,\"x\":0,\"y\":3},\"id\":\"f4029540-576a-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"11\",\"title\":\"Table of committer per author\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"embeddableConfig\":{\"vis\":{\"params\":{\"sort\":{\"columnIndex\":2,\"direction\":\"desc\"}}}},\"gridData\":{\"h\":3,\"i\":\"12\",\"w\":6,\"x\":0,\"y\":6},\"id\":\"fdd838c0-577b-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"12\",\"title\":\"Table of authors per organization\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"13\",\"w\":6,\"x\":6,\"y\":9},\"id\":\"52ff53f0-5782-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"13\",\"title\":\"Committers per committer organization\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"14\",\"w\":6,\"x\":0,\"y\":9},\"id\":\"901d89a0-5782-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"14\",\"title\":\"Table committers per committer organization\",\"type\":\"visualization\",\"version\":\"6.2.2\"},{\"gridData\":{\"h\":3,\"i\":\"15\",\"w\":6,\"x\":6,\"y\":0},\"id\":\"0d937840-55da-11e8-92e0-a7c9696733c7\",\"panelIndex\":\"15\",\"title\":\"Top authors\",\"type\":\"visualization\",\"version\":\"6.2.2\"}]",
+      "optionsJSON": "{\"darkTheme\":false,\"hidePanelTitles\":false,\"useMargins\":true}",
+      "version": 1,
+      "timeRestore": false,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[],\"highlightAll\":true,\"version\":true}"
+      }
+    }
+  }
+]
