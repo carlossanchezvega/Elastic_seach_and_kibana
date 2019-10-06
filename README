@@ -1,0 +1,54 @@
+***********************************************************************
+*********** TRABAJO FINAL - KIBANA Y ELASTICSEARCH -  *****************
+***********************************************************************
+
+** Autores: Javier LLorente Mañas y Carlos Sánchez Vega
+
+** Objetivo: en esta práctica final se muestran visualizaciones de datos relativos a commits en git de la comunidad openfv. 
+
+** Requisitos: tener levantados elasticsearch y kibana
+
+** Pasos a seguir para la visualización correcta del dashboard: 
+
+	- 1) Crear el índice para los datos de git (lo vamos a llamar "git_openfv":
+		 curl -XPUT -k localhost:9200/git_openfv
+
+	- 2) Importar el mapping de datos de git (json de mapping, del aula virtual, con los mappings del conjuntos de datos de git. En nuestro caso, 
+		la ruta donde estaba el fichero es: /home/csanchez/Downloads/opnfv2018/git_opnfv_mapping.json)
+
+		elasticdump --input=/home/csanchez/Downloads/opnfv2018/git_opnfv_mapping.json --output=http://localhost:9200 
+			--type=mapping --output-index=git_opnfv --headers='{"Content-Type":"application/json"}'
+
+	- 3) Importar el fichero de datos de entrada para git (json de datos, del aula virtual, con los datos de git. En nuestro caso, 
+		la ruta donde estaba el fichero es: /home/csanchez/Downloads/opnfv2018/git_opnfv_data.json)
+
+ 		elasticdump --input=/home/csanchez/Downloads/opnfv2018/git_opnfv_data.json --output=http://localhost:9200 
+			--type=data --output-index=git_opnfv --headers='{"Content-Type":"application/json"}'
+
+	- 4) Importar la búsqueda relativa al periodo en el que se realiza la visualización (el fichero de la búsqueda se llama "search"  y está en "../search"
+	- 5) Importar las visualizaciones (el fichero de la búsqueda se llama "search" y está en "../visualizations.json"
+	- 6) Importar el dashboard (el fichero de la búsqueda se llama "search" y está en "../git_dashboard.json"
+
+
+** Ficheros que componen la práctica: 
+
+			\	
+			|--\FICHEROS_PARA_KIBANA 				
+			|		|-- search.txt ---> fichero en el que está la búsqueda relativa al periodo de tiempo en el que se ha construido el dashboard
+			|		|--\CAPTURAS_DASHBOARD 
+			|		|	|-- captura_pantalla_dashboard_1.png
+			|		|	|-- captura_pantalla_dashboard_2.png						
+			|		|	|-- captura_pantalla_dashboard_3.png
+			|		|
+			|		|-- \JSON
+			|			|-- visualization.json ---> json con las visualizaciones de nuestro dashboard
+			|			|-- git_dashboard.json ---> json con el dasboard	
+			|
+			|-- memoria_elasticsearch_kibana ---> PDF en el que se explican algunas de las visualizaciones creadas
+			|
+			|-- elastic_search_querys.ipynb ---> notebook con análisis del conjunto de datos
+
+
+
+	
+			
